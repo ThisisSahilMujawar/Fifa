@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Home Page</title>
+  </head>
+  <body>
+    <h2>Demonstrate mouseOver() and focusFunction()</h2>
+
+    <h3
+      id="demo"
+      onmouseover="mouseOver()"
+      onmouseout="onMouseOut()"
+      style="color: black"
+    >
+      Mouse Over Me
+    </h3>
+    <input
+      type="text"
+      placeholder="Enter Text"
+      id="focus"
+      onfocus="focusFunction"
+      onblur="blurFunction()"
+      style="background: red"
+    />
+
+    <script>
+      function mouseOver() {
+        document.getElementById("demo").style.color = "Red";
+      }
+      function onMouseOut() {
+        document.getElementById("demo").style.color = "Black";
+      }
+      function focusFunction() {
+        document.getElementById("demo").style.background = "Yellow ";
+      }
+      function blurFunction() {
+        document.getElementById("demo").style.background = "Yellow ";
+      }
+    </script>
+  </body>
+</html>

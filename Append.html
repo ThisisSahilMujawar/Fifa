@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title> Array Append </title>
+    </head>
+    <body>
+        </body>
+        <h1> Javascript Practical </h1>
+        <script>
+            var array = [];
+            var x = prompt("Enter the size of an Array ");
+            // Input the elements in the array
+            for(i = 0; i < x; i++){
+                array[i] = prompt('ENter array element' + (i + 1));
+            }
+
+            // Display the array elements
+            for(i = 0; i < x; i++){
+                document.write("The element at position " + (i) + " is: " + array[i] + "</br></br>");
+            }
+
+            // Program to append an object to an array
+            function insertObject(arr, obj){
+                // append object
+                arr.push(obj);
+                console.log(arr);
+                document.write(arr + "</br></br>");
+            }
+
+            var  x = 12, y = 14;
+            object = (x , y);
+            insertObject(array, object);
+
+            // Program to check if an object is an array
+            function checkObject(arr){
+                //  Check if arr is array
+                const result = Array.isArray(arr);
+                if(result){
+                    console.log('${arr} is an array.');
+                    document.write("This is an array </br> </br>");
+                }else{
+                    console.log('${arr} is not an array');
+                    document.write("This is not an array </br> </br>");
+                }
+            }
+            checkObject(array);
+            console.log(array);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<!-- Using to UpperCase() method -->
+
+<html>
+  <head>
+    <title>Compare two strings</title>
+  </head>
+  <script>
+    const s1 = prompt("Enter String 1");
+    const s2 = prompt("Enter String 2");
+
+    const result = s1.toUpperCase() === s2.toUpperCase();
+    if (result) {
+      document.write("Two Strings are equal");
+    } else {
+      document.write("Two Strings are not equal");
+    }
+  </script>
+  <body></body>
+</html>
+
+<!-- Using locale compare -->
+
+<!-- <html>
+  <head>
+    <title>Compare Two Strings</title>
+  </head>
+  <body>
+    <script>
+      const s1 = prompt("Enter the String 1");
+      const s2 = prompt("Enter the string 2");
+      const result = s1.localeCompare(s2.undefined, { sensitivity: 'base' });
+      if (result = 0) {
+        document.write("Two strings are Equal");
+      } else {
+        document.write("Two Strings are not equal");
+      }
+    </script>
+  </body>
+</html> -->
+
+<!-- Using RegEx -->
+
+<!-- <html>
+  <head>
+    <title>Compare Two Strings</title>
+  </head>
+  <body>
+    <script>
+      const s1 = prompt("Enter the String 1");
+      const s2 = prompt("Enter the String 2");
+
+      const pattern = new RegExp(s1, "gi");
+      const result = pattern.test(s2);
+
+      if (result) {
+        document.write("Two Strings are equal");
+      } else {
+        document.write("Two Strings are not equal");
+      }
+    </script>
+  </body>
+</html> -->

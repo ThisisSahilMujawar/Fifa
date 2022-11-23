@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Table</title>
+        <script>
+            function printTable(){
+                var num;
+                num = Number(document.getElementById("txtNumber").value);
+                for(var i = 1; i <= 10; i++){
+                    var pTag = document.getElementById("pPrint");
+                    pTag.innerHTML += num * i + "<br/>";
+                }
+            }
+        </script>
+    </head>
+    <body style="text-align: center;">
+        <h1> JS function to display a number</h1>
+        <p><input type="text" id = "txtNumber" placeholder="Enter Number"/></p>
+        <p><input type="button"  value="Print Table" onclick="printTable()"/></p>
+
+        <p id="pPrint"></p>
+    </body>
+</html>

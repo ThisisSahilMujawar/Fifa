@@ -1,0 +1,87 @@
+1<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exp No: - 3</title>
+    <style>
+      div1 {
+        margin: 5px;
+        padding: 2px;
+        background-image: linear-gradient(orange, white, green);
+      }
+      h3 {
+        color: rgb(3, 3, 58);
+      }
+      b {
+        color: red;
+      }
+    </style>
+  </head>
+  <center>
+    <body>
+      <div class="div 1">
+        <script>
+          // Reverse String >>--
+          var string1;
+          var string2 = "";
+          document.write("<h3>Reverse String: </h3>");
+          string1 = prompt("Enter your String: ");
+
+          for (var i = string1.length - 1; i >= 0; i--) {
+            string2 += string1[i];
+          }
+          document.write(
+            "Your string before reversing is: <b>" + string1 + "</b><br>"
+          );
+          document.write(
+            "Your string after reversing is: <b>" + string2 + "</b><br>"
+          );
+
+          // Replacing Characters >>--
+          document.write("<h3>Replacing Characters in Strings: </h3>");
+          var char1 = prompt("Enter the character you want to replace: ");
+          var char2 = prompt("Enter by which character you want to replace");
+
+          var rep = string1.replace(char1, char2);
+          document.write("Your entered string was: <b>" + string1 + "</b><br>");
+          document.write(
+            "You want to replace the character : " +
+              char1 +
+              " by " +
+              char2 +
+              " <br> "
+          );
+          document.write(
+            "After replacing character, string becomes: <b>" + rep + "</b>"
+          );
+
+          // Checking Palindrome
+          document.write(
+            "<h3>Checking whether the string is a palindrome or not: </h3>"
+          );
+          string1 = string1.toLowerCase();
+          var bool = true;
+          var start = 0;
+          var end = string1.length - 1;
+
+          document.write(
+            "You entered String was: <b>" + string1 + " </b><br> "
+          );
+          while (start <= end) {
+            if (string1[start] != string1[end]) {
+              bool = false;
+              break;
+            } else {
+              start++;
+              end--;
+            }
+          }
+          if (bool) {
+            document.write("Given String is a palindrome");
+          } else {
+            document.write("Given String is not a Palindrome");
+          }
+        </script>
+      </div>
+    </body>
+  </center>
+</html>
